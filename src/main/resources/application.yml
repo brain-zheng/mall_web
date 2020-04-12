@@ -1,0 +1,27 @@
+server:
+  port: 8088
+
+# 数据库连接池druid配置
+Spring:
+  datasource:
+    druid:
+      driver-class-name : com.mysql.jdbc.Driver
+      url : jdbc:mysql://localhost:3306/mall_admin?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&connectTimeout=20000&socketTimeout=30000&useSSL=false&useAffectedRows=true
+      username : root
+      password : zhaijian12
+
+# dubbo 配置项，对应 DubboConfigurationProperties 配置类
+dubbo:
+  # Dubbo 应用配置
+  application:
+    name: mall-web # 应用名
+  # Dubbo 注册中心配置
+  registry:
+    address: zookeeper://127.0.0.1:2181 # 注册中心地址。个鞥多注册中心，可见 http://dubbo.apache.org/zh-cn/docs/user/references/registry/introduction.html 文档。
+  # Dubbo 消费者配置
+  protocol:
+    name: dubbo
+    host: localhost
+    port: 20889
+  consumer:
+    timeout: 10000 # 【重要】远程服务调用超时时间，单位：毫秒。默认为 1000 毫秒，胖友可以根据自己业务修改

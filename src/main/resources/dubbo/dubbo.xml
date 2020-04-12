@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:dubbo="http://dubbo.apache.org/schema/dubbo"
+       xmlns="http://www.springframework.org/schema/beans"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://dubbo.apache.org/schema/dubbo
+       http://dubbo.apache.org/schema/dubbo/dubbo.xsd">
+
+    <!-- 消费者引用服务 -->
+    <dubbo:reference id="LoginRPCService" interface="com.mall.admincenter.client.service.LoginRPCService"
+                     timeout="30000" version="1.0.0"/>
+
+    <dubbo:reference id="MallCarouselServiceImpl" interface="com.mall.goodscenter.client.service.MallCarouselService"
+                     timeout="3000" version="1.0.0"/>
+
+    <dubbo:reference id="MallCategoryServiceImpl" interface="com.mall.goodscenter.client.service.MallCategoryService"
+                     timeout="3000" version="1.0.0"/>
+
+</beans>

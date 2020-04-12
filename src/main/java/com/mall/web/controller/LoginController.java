@@ -1,4 +1,4 @@
-package com.mall.web.controller.account;
+package com.mall.web.controller;
 
 import com.mall.common.service.domain.ServiceResponse;
 import org.springframework.web.bind.annotation.RequestMapping;
