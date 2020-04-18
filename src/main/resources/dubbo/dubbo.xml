@@ -20,4 +20,7 @@
     <dubbo:reference id="IndexConfigService" interface="com.mall.admincenter.client.service.IndexConfigService"
                      timeout="3000" version="1.0.0"/>
 
+    <dubbo:reference id="MallUserService"  interface="com.mall.account.client.service.MallUserService"
+                     timeout="3000" version="1.0.0"/>
+    
 </beans>
