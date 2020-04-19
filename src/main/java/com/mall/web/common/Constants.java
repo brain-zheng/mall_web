@@ -16,6 +16,11 @@ public class Constants {
 
     public final static int INDEX_CATEGORY_NUMBER = 10;//首页一级分类的最大数量
 
+    public final static int GOODS_SEARCH_PAGE_LIMIT = 10;//搜索分页的默认条数(每页10条)
+
+    public final static int SELL_STATUS_UP = 0;//商品上架状态
+    public final static int SELL_STATUS_DOWN = 1;//商品下架状态
+
     public final static String MALL_VERIFY_CODE_KEY = "mallVerifyCode";//验证码key
 
     public final static String MALL_USER_SESSION_KEY = "newBeeMallUser";//session中user的key
