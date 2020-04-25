@@ -70,6 +70,12 @@
             <version>1.0.0</version>
         </dependency>
 
+        <dependency>
+            <groupId>com.mall</groupId>
+            <artifactId>ordercenter-client</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <!-- Thymeleaf 模板引擎依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

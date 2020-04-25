@@ -71,7 +71,7 @@ public class GoodsController {
         Integer goodsCategoryId = Integer.valueOf(params.get("goodsCategoryId") + "");
         String orderBy = params.get("orderBy") + "";
         PageQueryUtil pageUtil = new PageQueryUtil(page, limit);
-        PageResult pageResult = goodsInfoService.searchNewBeeMallGoods(pageUtil, goodsCategoryId, orderBy, keyword);
+        PageResult pageResult = goodsInfoService.searchMallGoods(pageUtil, goodsCategoryId, orderBy, keyword);
         List<MallGoodsInfoDTO> mallGoodsInfoDTOS = (List<MallGoodsInfoDTO>) pageResult.getList();
         List<MallSearchGoodsVO> mallSearchGoodsVOS = mallGoodsInfoDTOS.stream().map(GoodsController::searchGoodsDTO2VO).collect(Collectors.toList());
         pageResult.setList(mallSearchGoodsVOS);

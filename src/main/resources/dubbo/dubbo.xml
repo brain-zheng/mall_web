@@ -22,5 +22,14 @@
 
     <dubbo:reference id="MallUserService"  interface="com.mall.account.client.service.MallUserService"
                      timeout="3000" version="1.0.0"/>
-    
+
+    <dubbo:reference id="ShoppingCartService" interface="com.mall.ordercenter.client.service.ShoppingCartService"
+                     timeout="3000" version="1.0.0"/>
+
+    <dubbo:reference id="MallOrderService" interface="com.mall.ordercenter.client.service.MallOrderService"
+                     timeout="3000" version="1.0.0"/>
+
+    <dubbo:reference id="MallOrderItemService" interface="com.mall.ordercenter.client.service.MallOrderItemService"
+                     timeout="3000" version="1.0.0"/>
+
 </beans>
